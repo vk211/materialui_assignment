@@ -14,6 +14,7 @@ export default function Footer() {
     <>
       <Container
         className="FooterCard"
+        id='Contact'
         sx={{ display: "flex", bgcolor: "#011C3A", color: "#fff",py:10,width:'100%'}}
       >
         <Container>

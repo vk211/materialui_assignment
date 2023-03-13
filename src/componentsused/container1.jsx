@@ -1,4 +1,4 @@
-import { Container, Box, width } from "@mui/system";
+import { Container, Box } from "@mui/system";
 import mobile1 from "../Images/mobile-1.svg";
 import "./container1.css";
 import Button from "@mui/material/Button";
@@ -11,7 +11,6 @@ import Musiccard from "../common/Musicicon";
 import { CardData } from "../mockdata/datasetcontainer";
 import DoneIcon from "@mui/icons-material/Done";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { grey } from "@mui/material/colors";
 
 export default function Containertop({ reverse }) {
   return (
@@ -20,7 +19,9 @@ export default function Containertop({ reverse }) {
         className="topcontainer"
         sx={{ display: "flex",marginTop:'100px' }}
       >
-        <Container className="firstcontainer">
+        <Container className="firstcontainer"
+                id='home'
+                >
           <img className="mobile1" src={mobile1} alt="" />
         </Container>
         <Container sx={{ p: "100px" }}>
@@ -60,7 +61,7 @@ export default function Containertop({ reverse }) {
         </Container>
       </Container>
       <Container
-        className="topcontainer" sx={{ display: "flex" ,justifyContent:"space-between",marginTop:'100px'}}
+        className="topcontainer" id='Works' sx={{ display: "flex" ,justifyContent:"space-between",marginTop:'100px'}}
       >
         <Container
           sx={{ display: "flex", flexDirection: "column"}}
@@ -84,12 +85,15 @@ export default function Containertop({ reverse }) {
             ))}
           </Container>
         </Container>
-        <Container sx={{width:'33%'}}>
+        <Container sx={{width:'33%'}}
+                
+                >
           <img src={mobile2} alt="" />
         </Container>
       </Container>
       <Container
         className="topcontainer"
+        id='Service'
         sx={{ display: "flex", justifyContent: "space-between",marginTop:'100px'}}
       >
         <Box>

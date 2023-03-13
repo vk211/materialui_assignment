@@ -5,7 +5,7 @@ import Subscription from "../common/subscription";
 export default function OurServices(){
     return(
         <>
-        <Container className="Servicescontainer" sx={{display:"flex",flexDirection:'column', py:10,justifyContent:"center",width:'600px'}} >
+        <Container className="Servicescontainer" id='Pricing' sx={{display:"flex",flexDirection:'column', py:10,justifyContent:"center",width:'600px'}} >
             <Box sx={{display:"flex",justifyContent:"center"}}><h1>Our Services</h1></Box>
             <Box><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero numquam
                  porro et animi! Sit placeat consequuntur magnam, quis doloribus iusto 
